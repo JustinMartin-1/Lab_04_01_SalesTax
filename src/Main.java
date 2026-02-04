@@ -1,5 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
+public class Main {
+    public static void main(String[] args) {
 
+        double purchasePrice = 50.00;
+        double taxRate = 0.05;
+        double salesTax = purchasePrice * taxRate;
+
+        System.out.println("Purchase price: $" + purchasePrice);
+        System.out.println("Sales tax (5%): $" + salesTax);
     }
+}
