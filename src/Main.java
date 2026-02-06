@@ -1,11 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        double purchasePrice = 50.00;
-        double taxRate = 0.05;
-        double salesTax = purchasePrice * taxRate;
+        double purchasePrice = 100.00; // Simulating Input
+        final double taxRate = 0.05;
+        double salesTax = 0;
+        double totalPrice = 0;
 
-        System.out.println("Purchase price: $" + purchasePrice);
-        System.out.println("Sales tax (5%): $" + salesTax);
+        salesTax = purchasePrice * taxRate;
+        totalPrice = purchasePrice + salesTax;
+
+        System.out.println("sales tax: $" + salesTax);
+        System.out.println("Total price: $" + totalPrice);
+
     }
 }
